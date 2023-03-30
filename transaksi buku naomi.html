@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact form</title>
+        <link rel="stylesheet" href="css.css">
+
+
+        <style>
+            html,body {
+                min-height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                color:grey;
+            }
+            h1 {
+                margin: 0 0 20px;
+                font-weight: 400;
+                color:magenta;
+            }
+            p {
+            margin: 0 0 5px;
+            }
+            .main-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: pink;
+            }
+            form {
+                padding: 25px;
+                margin: 25px;
+                box-shadow: 0 2px 5px navy;
+                background: whitesmoke;
+            }
+            .fas {
+                margin: 25px 10px 0;
+                font-size: 72px;
+                color:rgb(56, 10, 148);
+            }
+            .fa-envalope {
+                transform: rotate(-20deg);
+            }
+            .fa-at , .fa-mail-bulk{
+                transform: rotate(10deg);
+            }
+            input, textarea {
+                width: calc(100%  18px);
+                padding: 8px;
+                margin-bottom: 20px;
+                border: 1px solid cyan;
+                outline: none;
+            }
+            input::placeholder {
+                color:rgb(22, 21, 21);
+            }
+            button{
+                width: 100px;
+                padding: 10px;
+                border: none;
+                background: black;
+                font-size: 16px;
+                font-weight: 400;
+                color: azure;
+            }
+            button:hover {
+                background: aquamarine;
+            }
+            @media (min-widht: 568px) {
+                .main-block {
+                    flex-direction: row;
+
+                    width: 50%;
+                }
+                .fa-envalope {
+                    margin-left: 20%;
+                }
+                .fa-at {
+                    margin-top: -10%;
+                    margin-left: 65%;
+                }
+                .fa-mail-bulk {
+                    margin-top: 2%;
+                    margin-left: 28%;
+                }
+            }
+            </style>
+        </head>
+        <body>
+        <div class="main-block">
+            <div class=":left-part">
+              <i class="fas fa-envalope"></i>
+              <i class="fas fa-at"></i>
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+            <form action="/">
+                <h1>Transaksi</h1>
+                <div class="info">
+                    <input class="fname" type="text" name="name" placeholder="Judul Buku">
+                    <input type="text" name="name" placeholder="no buku">
+                    <input type="text" name="name" placeholder="tanggal peminjaman">
+                    <input type="text" name="name" placeholder="Kode Buku">
+                    <input type="text" name="name" placeholder="Jenis Buku">
+                    <input type="text" name="name" placeholder="tanggal pengembalian">
+
+                
+                    </div>
+
+                    <button type="submit" href="/">Submit</button>
+                    <a href="perpus2.html">Kembali ke menu</a>
+                </form>
+            </div>
+        </body>
+    </html>
